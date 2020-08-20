@@ -1,0 +1,13 @@
+.profileContainer {
+  display: flex;
+  justify-content: space-between;
+  place-items: flex-start;
+
+  &__card {
+    padding: 20px;
+
+    &__title {
+      margin-bottom: 10px;
+    }
+  }
+}

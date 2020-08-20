@@ -1,0 +1,17 @@
+$bg_color: #f5f7fb;
+$shadow_color: rgba(0,0,0,0.2);
+
+.profileMain {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: $shadow_color 0 5px 10px;
+  background-color: $bg_color;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+}
+
+.center {
+  text-align: center;
+}
