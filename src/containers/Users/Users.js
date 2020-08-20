@@ -36,7 +36,7 @@ const Users = () => {
             { name: 'email', title: 'Email' },
         ];
 
-        const rows = users.map((user) => {
+        const rows = users.map((user, i) => {
             const {
                 location: {coordinates: {latitude: lat, longitude: lng}},
                 picture: {thumbnail: src},
@@ -44,7 +44,7 @@ const Users = () => {
                 gender,
                 email,
             } = user;
-            return {name, gender, email, lat, lng, image: <img src={src}/>}
+            return {name, gender, email, lat, lng, id: i, image: <img src={src} />}
         })
 
 

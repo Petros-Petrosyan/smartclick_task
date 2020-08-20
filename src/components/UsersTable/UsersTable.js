@@ -14,11 +14,12 @@ import {
     Table,
     TableHeaderRow,
     TableFilterRow,
-    PagingPanel, TableRowDetail,
+    PagingPanel,
+    TableRowDetail,
 } from '@devexpress/dx-react-grid-material-ui';
 
 // components
-import Map from './Map/Map';
+import { Map } from './Map/Map';
 
 
 const UsersTable = (props) => {
@@ -27,11 +28,10 @@ const UsersTable = (props) => {
     const [currentPage, setCurrentPage] = useState(0);
     const [pageSize, setPageSize] = useState(50);
     const [pageSizes] = useState([50, 100, 150]);
-    
 
     return (
         <Paper>
-            <Grid rows={rows} columns={columns}>
+            <Grid rows={rows} columns={columns} >
                 <RowDetailState defaultExpandedRowIds={[0]} />
                 <PagingState
                     currentPage={currentPage}
